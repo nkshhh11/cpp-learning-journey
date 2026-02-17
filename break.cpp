@@ -17,6 +17,7 @@ int main() {
 
 
 
+
 //for finding factor of given number
 // #include <iostream>
 // using namespace std;
