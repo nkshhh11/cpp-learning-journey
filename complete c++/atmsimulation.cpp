@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-   int balance = 10000;
+   int balance = 1;
    int pin=1234;
    int enteredpin;
    int choice;
@@ -58,4 +58,4 @@ int main() {
     else{
     cout<<"Wrong pin";
 }
-}"     "
+}
