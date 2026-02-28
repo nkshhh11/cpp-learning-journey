@@ -1,32 +1,63 @@
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// bool isArmstrong(int n){
+//     int original = n;
+//     int sum = 0;
+//     int count = 0;
+//     int temp = n;
+//     while(temp > 0){
+//         temp = temp / 10;
+//         count++;
+//     }
+//     temp = n;
+//     while(temp > 0){
+//         int digit = temp % 10;
+//         sum = sum + pow(digit, count);
+//         temp = temp / 10;
+//     }
+//     return (sum == original);
+// }
+// int main(){
+//     int num;
+//     cout << "Enter a number: ";
+//     cin >> num;
+//     if(isArmstrong(num))
+//         cout << "Armstrong Number";
+//     else
+//         cout << "Not Armstrong Number";
+
+//     return 0;
+// }
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
-
 bool isArmstrong(int n){
-    int original = n;
-    int sum = 0;
-    int count = 0;
-    int temp = n;
-    while(temp > 0){
-        temp = temp / 10;
+    int sum=0;
+    int original=n;
+    int temp=n;
+    int count=0;
+    while(temp>0){
+        temp=temp/10;
         count++;
     }
-    temp = n;
-    while(temp > 0){
-        int digit = temp % 10;
-        sum = sum + pow(digit, count);
-        temp = temp / 10;
+    temp=n;
+    while(temp>0){
+        int digit=temp%10;
+        sum=sum+pow(digit , count);
+        temp=temp/10;
     }
-    return (sum == original);
+    return (sum==original);
 }
-
-int main(){
+int main() {
     int num;
-    cout << "Enter a number: ";
-    cin >> num;
+    cout<<"enter the number : ";
+    cin>>num;
     if(isArmstrong(num))
-        cout << "Armstrong Number";
-    else
-        cout << "Not Armstrong Number";
-
+    cout<<"yes it is armstrong";
+else 
+cout<<"this numebr is not armstrong";
     return 0;
 }
