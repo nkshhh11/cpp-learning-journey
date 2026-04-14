@@ -23,34 +23,52 @@
 
 
 //call by value
-#include <iostream>
+
+
+
+// #include <iostream>
+// using namespace std;
+// void swap(int a, int b) {
+//     int temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+//     cout << "Inside function : " << endl;
+//     cout << "a = " << a << endl;
+//     cout << "b = " << b << endl;
+// }
+// int main() {
+//     int a, b;
+//     cout << "Enter first number: ";
+//     cin >> a;
+//     cout << "Enter second number: ";
+//     cin >> b;
+//     swap(a, b);
+//     cout << "after swap : " << endl;
+//     cout << "a = " << a << endl;
+//     cout << "b = " << b << endl;
+//     return 0;
+// }
+
+
+
+
+
+#include <bits/stdc++.h>
 using namespace std;
-
-void swap(int a, int b) {
+void swap(int a , int b ){
     int temp;
-    temp = a;
-    a = b;
-    b = temp;
-
-    cout << "Inside function : " << endl;
-    cout << "a = " << a << endl;
-    cout << "b = " << b << endl;
+    temp=a;
+    a=b;
+    b=temp;
 }
-
 int main() {
-    int a, b;
-
-    cout << "Enter first number: ";
-    cin >> a;
-
-    cout << "Enter second number: ";
-    cin >> b;
-
-    swap(a, b);
-
-    cout << "after swap : " << endl;
-    cout << "a = " << a << endl;
-    cout << "b = " << b << endl;
-
-    return 0;
+   int a , b;
+   cout<<"enter the number : ";
+   cin>>a;
+   cin>>b;
+   swap(a,b);
+ cout<<"the swapped numebrs are : ";
+   cout<<"after swapp : "<<a<<" "<<b;
+   return 0;
 }
