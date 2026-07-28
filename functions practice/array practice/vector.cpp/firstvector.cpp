@@ -239,15 +239,18 @@
 
 
 
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
-int main() {
-    vector<int> vec = {1,3,4,4,5,7,3,8,9};
-    for( auto  it = vec.rbegin(); it != vec.rend(); it++){
-        cout << *(it) << " ";
-    }
-    return 0;
-}
+// int main() {
+//     vector<int> vec = {1,3,4,4,5,7,3,8,9};
+//     for( auto  it = vec.rbegin(); it != vec.rend(); it++){
+//         cout << *(it) << " ";
+//     }
+//     return 0;
+// }
 
 //vector ki duniya ka reverse loop
+
+
+
