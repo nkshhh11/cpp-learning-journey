@@ -329,25 +329,122 @@
 
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//   int n;
+//   cin>>n;
+//   int arr[n];
+//   for(int i=0 ; i<n ; i++){
+//     cin>>arr[i];
+//   }
+//   map<int , int>mpp;
+//   for(int i=0 ; i<n ; i++){
+//     mpp[arr[i]]++;
+//   }
+//   int q;
+//   cin>>q;
+//   while(q--){
+//     int number;
+//     cin>number;
+//     cout<<map[number]<<endl;
+//   }
+// }
+
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void selection_sort(int arr[] , int n){
+//   for(int i=0 ; i<n-1 ; i++){
+//     int min = i;
+//     for(int j=i+1 ; j<n ; j++){
+//       if(arr[j]<arr[min]){
+//         min = j;
+//       }
+//     }
+//     int temp = arr[min];
+//     arr[min]=arr[i];
+//     arr[i]=temp;
+//   }
+// }
+// int main() {
+//    int n;
+//    cin>>n;
+//    int arr[n];
+//    for(int i=0 ; i<n ; i++){
+//     cin>>arr[i];
+//    }
+//     selection_sort(arr , n);
+//     for(int i=0 ; i<n ; i++){
+//       cout<<arr[i]<<" ";
+//     }
+// }
+
+
+
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// void bubble_sort(int arr[] , int n){
+//   for(int i=n-1 ; i>=0 ; i--){
+//     for(int j=0 ; j<=i-1 ; j++){
+//       if(arr[j]>arr[j+1]){  // phle or uske doosre ko compare yaani adjacent ko compare krke swap ka kaam
+//       int temp = arr[j+1];
+//       arr[j+1]=arr[j];
+//       arr[j]=temp;
+//     }
+//   }
+// }
+// }
+// int main() {
+//    int n;
+//    cin>>n;
+//    int arr[n];
+//    for(int i=0 ; i<n ; i++){
+//     cin>>arr[i];
+//    }
+//     bubble_sort(arr , n);
+//     for(int i=0 ; i<n ; i++){
+//       cout<<arr[i]<<" ";
+//     }
+// }
+
+
+
+
+
+
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
-
-int main() {
-  int n;
-  cin>>n;
-  int arr[n];
-  for(int i=0 ; i<n ; i++){
-    cin>>arr[i];
-  }
-  map<int , int>mpp;
-  for(int i=0 ; i<n ; i++){
-    mpp[arr[i]]++;
-  }
-  int q;
-  cin>>q;
-  while(q--){
-    int number;
-    cin>number;
-    cout<<map[number]<<endl;
+void insertion_sort(int arr[] , int n){
+  for(int i=0 ; i<=n ; i++){
+    int j=i;
+    while(j>0 && arr[j-1] > arr[j]){
+      int temp=arr[j-1];
+      arr[j-1]=arr[j];
+      arr[j]= temp;
+       j--;
+    }
   }
 }
+int main() {
+   int n;
+   cin>>n;
+   int arr[n];
+   for(int i=0 ; i<n ; i++){
+    cin>>arr[i];
+   }
+    insertion_sort(arr , n);
+    for(int i=0 ; i<n ; i++){
+      cout<<arr[i]<<" ";
+    }
+}
+
