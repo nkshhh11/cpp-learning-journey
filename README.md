@@ -12,3 +12,23 @@ Topics covered:
 - Functions
 - Array
 - and also solve DSA problems
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/nkshhh11/cpp-learning-journey/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/nkshhh11/cpp-learning-journey/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+## Binary Indexed Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/nkshhh11/cpp-learning-journey/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+## Segment Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/nkshhh11/cpp-learning-journey/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+<!---LeetCode Topics End-->
